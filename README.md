@@ -1,34 +1,27 @@
-# Falls
-A Particle-based Minetest Waterfalls/Lavafalls Mod
+# Algae
+An Algae mapgen mod to extend Minetest Game
 
-![ScreenShot](/Screenshot_2.jpg)
+![ScreenShot](/Deciduous_Forest.png)
 
-Optionally depends on: [Unified Inventory](https://github.com/minetest-mods/unified_inventory), [Titanium](https://gitlab.com/VanessaE/titanium), [Quartz](https://github.com/minetest-mods/quartz), and Moreores
+*Adds three Nodes:*
 
-*Adds following Nodes:*
+### Algae_thick
+### Algae_medium
+### Algae_thin
 
-**Waterfall Block:**
-  A block that spawns particles in a defined direction that fall a defined height. Can be adjusted with right click
-  Can swim through, but will drown
- 
-**Waterfall Basin:**
-  A block for placing at the bottom of a given waterfall, spawns particles that rebound from the ground in a defined direction and       
-  height. Can be ajusted with right click. Not water, nor can you drown. May be changed in future
+Which will now spawn in three places:
 
-**Fountain:**
-  A Beautiful Fountain with a simple particle animation, non-adjustable.
-  
-**Lavafall Block, Basin, Fountain**
-Works the same way for lava as above nodes
+1. Deciduous Forest Biomes (see above screenshot)
 
-**Whirlpool Machine:**
-  A furnace-like node that allows a user to input a bucket of water and a quartz crystal. Then after pulling a lever, the device  
-  runs for 10 seconds, outputing a turbulent water bucket.
-  
-*Adds following items:*
+2. Rainforest Biomes: (near papyrus)
+![ScreenShot2](/Rainforest.png)
 
-**Turbulent Water Bucket:**
-  A crafting item used for making the three active nodes of this mod. Does not make a new liquid type (yet).   
-  
+3. Savana Biomes: (near papyrus)
+![ScreenShot3](/Savana_Reeds.png)
 
-*Special Thanks to [@JamieStanton96](https://github.com/JamieStanton96), for creating many of the textures, helping with node design and functionality, and general testing support and feedback!*
+That's it! Simple great extension. 
+### Check out my other mods:
+
+[rocks](https://github.com/ExeVirus/rocks)
+
+[falls](https://github.com/ExeVirus/falls)
