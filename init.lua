@@ -1,12 +1,12 @@
-local MP 	= minetest.get_modpath(minetest.get_current_modname())
-local S, NS = dofile(MP..'/intllib.lua')
+-- Translation support
+local S = minetest.get_translator("algae")
 
 --
 -- Algae
 --
 
 local algae_thin_def = {
-	description = S("Algae_thin"),
+	description = S("Thin algae"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -51,7 +51,7 @@ local algae_thin_def = {
 					itemstack:take_item()
 				end
 			else
-				minetest.chat_send_player(player_name, "Node is protected")
+				minetest.chat_send_player(player_name, S("Node is protected."))
 				minetest.record_protection_violation(pos, player_name)
 			end
 		end
@@ -61,7 +61,7 @@ local algae_thin_def = {
 }
 
 local algae_medium_def = {
-	description = S("Algae_Medium"),
+	description = S("Medium algae"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -106,7 +106,7 @@ local algae_medium_def = {
 					itemstack:take_item()
 				end
 			else
-				minetest.chat_send_player(player_name, "Node is protected")
+				minetest.chat_send_player(player_name, S("Node is protected."))
 				minetest.record_protection_violation(pos, player_name)
 			end
 		end
@@ -116,7 +116,7 @@ local algae_medium_def = {
 }
 
 local algae_thick_def = {
-	description = S("Algae_thick"),
+	description = S("Thick algae"),
 	drawtype = "nodebox",
 	paramtype = "light",
 	paramtype2 = "facedir",
@@ -166,7 +166,7 @@ local algae_thick_def = {
 					itemstack:take_item()
 				end
 			else
-				minetest.chat_send_player(player_name, "Node is protected")
+				minetest.chat_send_player(player_name, S("Node is protected."))
 				minetest.record_protection_violation(pos, player_name)
 			end
 		end
