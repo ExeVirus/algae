@@ -140,11 +140,9 @@ local algae_thick_def = {
 		fixed = {-7 / 16, -0.5, -7 / 16, 7 / 16, -15 / 32, 7 / 16}
 	},
 
-	on_construct = function(itemstack, placer, pointed_thing)
+	on_place = function(itemstack, placer, pointed_thing)
         if placer == nil then
             minetest.log("decorations have no placer")
-        else
-            minetest.log(placer) 
         end
 		local pos = pointed_thing.above
 		local node = minetest.get_node(pointed_thing.under)
